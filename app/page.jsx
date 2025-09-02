@@ -804,7 +804,7 @@ export default function BJJConnectApp() {
             </p>
           </div>
 
-          <form onSubmit={(e) => { e.preventDefault(); handleLogin(); }} className="space-y-6">
+          <form onChange={(e) => { e.preventDefault(); handleLogin(); }} className="space-y-6">
             {/* Campos comuns */}
             <div className="grid md:grid-cols-2 gap-4">
               <div>
