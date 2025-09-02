@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Reset e estilo global --- */
+html, body {
+  @apply min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-blue-800;
+  font-family: 'Inter', sans-serif;
+  color: #111827; /* cinza-900 */
+}
+
+/* Cartões brancos arredondados */
+.card {
+  @apply bg-white rounded-2xl shadow-md p-6;
+}
+
+/* Botões primários */
+.btn-primary {
+  @apply bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition;
+}
+
+/* Botões secundários */
+.btn-secondary {
+  @apply bg-gray-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-gray-700 transition;
+}
+
+/* Input / Select / Textarea */
+input, select, textarea {
+  @apply border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+/* Links de ação (como “Cadastrar como...”) */
+a {
+  @apply text-blue-600 font-medium hover:underline;
+}
+
+/* Sidebar */
+.sidebar {
+  @apply w-64 bg-white shadow-lg h-screen flex flex-col;
+}
+
+/* Gradientes para caixas de destaque */
+.gradient-box-blue {
+  @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl p-6;
+}
+
+.gradient-box-green {
+  @apply bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl p-6;
+}
+
+.gradient-box-purple {
+  @apply bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-xl p-6;
+}
+
